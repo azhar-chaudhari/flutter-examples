@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_examples/profile.dart';
+import 'package:flutter_examples/pages/profile.dart';
 
 class NavDrawer extends StatelessWidget {
   const NavDrawer({super.key});

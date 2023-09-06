@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_examples/pages/button_page.dart';
 import 'package:flutter_examples/pages/profile.dart';
 import 'package:flutter_examples/pages/text_page.dart';
 
@@ -39,6 +40,17 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const TextPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Buttons'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ButtonPage()),
               );
             },
           ),

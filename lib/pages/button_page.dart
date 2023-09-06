@@ -119,28 +119,28 @@ class _ButtonPageState extends State<ButtonPage> {
           PopupMenuButton(
             itemBuilder: (context) => [
               const PopupMenuItem(
+                value: 1,
                 child: Text("Profile"),
-                value: 1,
               ),
               const PopupMenuItem(
-                child: Text("Account"),
                 value: 2,
+                child: Text("Account"),
               ),
               const PopupMenuItem(
+                value: 1,
                 child: Text("Settings"),
-                value: 1,
               ),
               const PopupMenuItem(
+                value: 1,
                 child: Text("About GFG"),
-                value: 1,
               ),
               const PopupMenuItem(
+                value: 1,
                 child: Text("Go Premium"),
-                value: 1,
               ),
               const PopupMenuItem(
-                child: Text("Logout"),
                 value: 1,
+                child: Text("Logout"),
               ),
             ],
           ),

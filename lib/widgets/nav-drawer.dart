@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_examples/pages/button_page.dart';
 import 'package:flutter_examples/pages/checkbox_page.dart';
 import 'package:flutter_examples/pages/circle_avatar_page.dart';
+import 'package:flutter_examples/pages/constrained_page.dart';
 import 'package:flutter_examples/pages/container_page.dart';
 import 'package:flutter_examples/pages/dropdown_page.dart';
 import 'package:flutter_examples/pages/icon_button_page.dart';
@@ -135,17 +136,6 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.verified_user),
-            title: const Text('Container'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ContainerPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
             title: const Text('Icon'),
             onTap: () {
               Navigator.pop(context); // Close the drawer
@@ -168,12 +158,35 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.verified_user),
+            title: const Text('Container'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ContainerPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
             title: const Text('SizedBox'),
             onTap: () {
               Navigator.pop(context); // Close the drawer
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SizedBoxPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('ConstrainedBox'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ConstrainedBoxPage()),
               );
             },
           ),

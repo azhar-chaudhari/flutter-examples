@@ -3,7 +3,10 @@ import 'package:flutter_examples/pages/button_page.dart';
 import 'package:flutter_examples/pages/checkbox_page.dart';
 import 'package:flutter_examples/pages/container_page.dart';
 import 'package:flutter_examples/pages/dropdown_page.dart';
+import 'package:flutter_examples/pages/icon_page.dart';
 import 'package:flutter_examples/pages/image_page.dart';
+import 'package:flutter_examples/pages/margin_page.dart';
+import 'package:flutter_examples/pages/padding_page.dart';
 import 'package:flutter_examples/pages/popupmenu_page.dart';
 import 'package:flutter_examples/pages/profile.dart';
 import 'package:flutter_examples/pages/snackbar_page.dart';
@@ -123,6 +126,39 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const ContainerPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Icon'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const IconPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Padding'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const PaddingPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Margin'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MarginPage()),
               );
             },
           ),

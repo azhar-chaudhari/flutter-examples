@@ -10,6 +10,7 @@ import 'package:flutter_examples/pages/margin_page.dart';
 import 'package:flutter_examples/pages/padding_page.dart';
 import 'package:flutter_examples/pages/popupmenu_page.dart';
 import 'package:flutter_examples/pages/profile.dart';
+import 'package:flutter_examples/pages/sizedbox_page.dart';
 import 'package:flutter_examples/pages/snackbar_page.dart';
 import 'package:flutter_examples/pages/text_page.dart';
 
@@ -149,6 +150,17 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const IconButtonPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('SizedBox'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SizedBoxPage()),
               );
             },
           ),

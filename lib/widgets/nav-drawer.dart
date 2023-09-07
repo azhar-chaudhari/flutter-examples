@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_examples/pages/button_page.dart';
+import 'package:flutter_examples/pages/checkbox_page.dart';
+import 'package:flutter_examples/pages/container_page.dart';
 import 'package:flutter_examples/pages/dropdown_page.dart';
 import 'package:flutter_examples/pages/image_page.dart';
 import 'package:flutter_examples/pages/popupmenu_page.dart';
@@ -99,6 +101,28 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SnackBarPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Checkbox'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CheckboxPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Container'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ContainerPage()),
               );
             },
           ),

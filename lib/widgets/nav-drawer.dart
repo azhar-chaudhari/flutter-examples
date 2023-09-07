@@ -3,6 +3,7 @@ import 'package:flutter_examples/pages/button_page.dart';
 import 'package:flutter_examples/pages/checkbox_page.dart';
 import 'package:flutter_examples/pages/container_page.dart';
 import 'package:flutter_examples/pages/dropdown_page.dart';
+import 'package:flutter_examples/pages/icon_button_page.dart';
 import 'package:flutter_examples/pages/icon_page.dart';
 import 'package:flutter_examples/pages/image_page.dart';
 import 'package:flutter_examples/pages/margin_page.dart';
@@ -137,6 +138,17 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const IconPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('IconButton'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const IconButtonPage()),
               );
             },
           ),

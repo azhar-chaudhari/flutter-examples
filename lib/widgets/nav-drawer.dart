@@ -13,8 +13,10 @@ import 'package:flutter_examples/pages/margin_page.dart';
 import 'package:flutter_examples/pages/padding_page.dart';
 import 'package:flutter_examples/pages/popupmenu_page.dart';
 import 'package:flutter_examples/pages/profile.dart';
+import 'package:flutter_examples/pages/scaffold_page.dart';
 import 'package:flutter_examples/pages/sizedbox_page.dart';
 import 'package:flutter_examples/pages/snackbar_page.dart';
+import 'package:flutter_examples/pages/tabbar_page.dart';
 import 'package:flutter_examples/pages/text_page.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -190,6 +192,30 @@ class NavDrawer extends StatelessWidget {
               title: const Text("UI Elements"),
               leading: const Icon(Icons.menu_open),
               children: [
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Scaffold'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ScaffoldPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Tabbar,TabBarView'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const TabbarPage()),
+                    );
+                  },
+                ),
                 ListTile(
                   leading: const Icon(Icons.verified_user),
                   title: const Text('SnackBar'),

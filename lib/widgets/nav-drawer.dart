@@ -46,184 +46,221 @@ class NavDrawer extends StatelessWidget {
               );
             },
           ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Text'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const TextPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Buttons'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ButtonPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Dropdown'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const DropdownPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Popup Menu'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const PopupMenuPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Image'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ImagePage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('CircleAvatar'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const CircleAvatarPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('SnackBar'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const SnackBarPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Checkbox'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const CheckboxPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Icon'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const IconPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('IconButton'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const IconButtonPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Container'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const ContainerPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('SizedBox'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const SizedBoxPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('ConstrainedBox'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const ConstrainedBoxPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Padding'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const PaddingPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Margin'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MarginPage()),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.verified_user),
-            title: const Text('Language'),
-            onTap: () {
-              Navigator.pop(context); // Close the drawer
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const LanguagePage()),
-              );
-            },
-          ),
+          ExpansionTile(
+              title: const Text("Basic "),
+              leading: const Icon(Icons.menu_open),
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Text'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const TextPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Image'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ImagePage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Icon'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const IconPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Container'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ContainerPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Padding'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PaddingPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Margin'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MarginPage()),
+                    );
+                  },
+                ),
+              ]),
+          ExpansionTile(
+              title: const Text("Buttons, Dropdown, and Selection "),
+              leading: const Icon(Icons.menu_open),
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Buttons'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ButtonPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Dropdown'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const DropdownPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Popup Menu'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PopupMenuPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Checkbox'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CheckboxPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('IconButton'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const IconButtonPage()),
+                    );
+                  },
+                ),
+              ]),
+          ExpansionTile(
+              title: const Text("UI Elements"),
+              leading: const Icon(Icons.menu_open),
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('SnackBar'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SnackBarPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('CircleAvatar'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CircleAvatarPage()),
+                    );
+                  },
+                ),
+              ]),
+          ExpansionTile(
+              title: const Text("Layout,Sizing "),
+              leading: const Icon(Icons.menu_open),
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('SizedBox'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SizedBoxPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('ConstrainedBox'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ConstrainedBoxPage()),
+                    );
+                  },
+                ),
+              ]),
+          ExpansionTile(
+              title: const Text("Others"),
+              leading: const Icon(Icons.menu_open),
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Language'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LanguagePage()),
+                    );
+                  },
+                ),
+              ]),
         ],
       ),
     );

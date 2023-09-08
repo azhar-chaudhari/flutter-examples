@@ -20,6 +20,7 @@ import 'package:flutter_examples/pages/snackbar_page.dart';
 import 'package:flutter_examples/pages/tabbar_page.dart';
 import 'package:flutter_examples/pages/text_page.dart';
 import 'package:flutter_examples/pages/toggle_button_page.dart';
+import 'package:flutter_examples/pages/visibility_page.dart';
 
 class NavDrawer extends StatelessWidget {
   const NavDrawer({super.key});
@@ -121,6 +122,18 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const MarginPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Visibility'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const VisibilityPage()),
                     );
                   },
                 ),

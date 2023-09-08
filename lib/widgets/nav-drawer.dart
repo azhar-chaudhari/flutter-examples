@@ -20,6 +20,7 @@ import 'package:flutter_examples/pages/snackbar_page.dart';
 import 'package:flutter_examples/pages/tabbar_page.dart';
 import 'package:flutter_examples/pages/text_page.dart';
 import 'package:flutter_examples/pages/toggle_button_page.dart';
+import 'package:flutter_examples/pages/vertical_divider_page.dart';
 import 'package:flutter_examples/pages/visibility_page.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -134,6 +135,18 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const VisibilityPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('VerticalDivider'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const VerticalDividerPage()),
                     );
                   },
                 ),

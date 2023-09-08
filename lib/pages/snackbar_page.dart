@@ -8,8 +8,6 @@ class SnackBarPage extends StatefulWidget {
 }
 
 class _SnackBarPageState extends State<SnackBarPage> {
-  GlobalKey<ScaffoldState> _key = GlobalKey();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

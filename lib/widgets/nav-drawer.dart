@@ -8,6 +8,7 @@ import 'package:flutter_examples/pages/dropdown_page.dart';
 import 'package:flutter_examples/pages/icon_button_page.dart';
 import 'package:flutter_examples/pages/icon_page.dart';
 import 'package:flutter_examples/pages/image_page.dart';
+import 'package:flutter_examples/pages/language_page.dart';
 import 'package:flutter_examples/pages/margin_page.dart';
 import 'package:flutter_examples/pages/padding_page.dart';
 import 'package:flutter_examples/pages/popupmenu_page.dart';
@@ -209,6 +210,17 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const MarginPage()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Language'),
+            onTap: () {
+              Navigator.pop(context); // Close the drawer
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const LanguagePage()),
               );
             },
           ),

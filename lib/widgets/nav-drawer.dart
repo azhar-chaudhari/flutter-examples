@@ -14,6 +14,7 @@ import 'package:flutter_examples/pages/icon_button_page.dart';
 import 'package:flutter_examples/pages/icon_page.dart';
 import 'package:flutter_examples/pages/image_page.dart';
 import 'package:flutter_examples/pages/language_page.dart';
+import 'package:flutter_examples/pages/limitedbox_page.dart';
 import 'package:flutter_examples/pages/margin_page.dart';
 import 'package:flutter_examples/pages/padding_page.dart';
 import 'package:flutter_examples/pages/placeholder_page.dart';
@@ -458,6 +459,18 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const TransformPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('LimitedBox'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LimitedBoxPage()),
                     );
                   },
                 ),

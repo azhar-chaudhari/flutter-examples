@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_examples/style/button.dart';
 
 class ButtonPage extends StatefulWidget {
   const ButtonPage({super.key});
@@ -34,6 +35,15 @@ class _ButtonPageState extends State<ButtonPage> {
               ),
               onPressed: () {},
               child: const Text('TextButton'),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              // style: ButtonStyle(elevation: MaterialStateProperty(12.0 )),
+              style: buttonPrimary,
+              child: const Text('Elevated Button'),
             ),
             const SizedBox(
               height: 10,

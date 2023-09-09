@@ -12,6 +12,7 @@ import 'package:flutter_examples/pages/image_page.dart';
 import 'package:flutter_examples/pages/language_page.dart';
 import 'package:flutter_examples/pages/margin_page.dart';
 import 'package:flutter_examples/pages/padding_page.dart';
+import 'package:flutter_examples/pages/placeholder_page.dart';
 import 'package:flutter_examples/pages/popupmenu_page.dart';
 import 'package:flutter_examples/pages/profile.dart';
 import 'package:flutter_examples/pages/scaffold_page.dart';
@@ -161,6 +162,18 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const TooltipPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Placeholder'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PlaceholderPage()),
                     );
                   },
                 ),

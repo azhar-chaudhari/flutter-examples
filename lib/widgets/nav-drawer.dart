@@ -28,6 +28,7 @@ import 'package:flutter_examples/pages/tabbar_page.dart';
 import 'package:flutter_examples/pages/text_page.dart';
 import 'package:flutter_examples/pages/toggle_button_page.dart';
 import 'package:flutter_examples/pages/tooltip_page.dart';
+import 'package:flutter_examples/pages/transform_page.dart';
 import 'package:flutter_examples/pages/tween_animation_builder_page.dart';
 import 'package:flutter_examples/pages/vertical_divider_page.dart';
 import 'package:flutter_examples/pages/visibility_page.dart';
@@ -445,6 +446,18 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const BaselinePage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Transform'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const TransformPage()),
                     );
                   },
                 ),

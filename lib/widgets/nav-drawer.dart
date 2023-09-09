@@ -16,6 +16,7 @@ import 'package:flutter_examples/pages/padding_page.dart';
 import 'package:flutter_examples/pages/placeholder_page.dart';
 import 'package:flutter_examples/pages/popupmenu_page.dart';
 import 'package:flutter_examples/pages/profile.dart';
+import 'package:flutter_examples/pages/row_page.dart';
 import 'package:flutter_examples/pages/scaffold_page.dart';
 import 'package:flutter_examples/pages/sizedbox_page.dart';
 import 'package:flutter_examples/pages/snackbar_page.dart';
@@ -188,6 +189,17 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const ColumnPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Row'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const RowPage()),
                     );
                   },
                 ),

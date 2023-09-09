@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_examples/pages/alert_dialog_page.dart';
 import 'package:flutter_examples/pages/align_page.dart';
+import 'package:flutter_examples/pages/aspect_ratio.dart';
 import 'package:flutter_examples/pages/button_page.dart';
 import 'package:flutter_examples/pages/checkbox_page.dart';
 import 'package:flutter_examples/pages/circle_avatar_page.dart';
@@ -419,6 +420,18 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const AlignPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Aspect Ratio'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const AspectRatioPage()),
                     );
                   },
                 ),

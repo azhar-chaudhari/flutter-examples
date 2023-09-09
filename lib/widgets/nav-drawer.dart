@@ -20,6 +20,8 @@ import 'package:flutter_examples/pages/snackbar_page.dart';
 import 'package:flutter_examples/pages/tabbar_page.dart';
 import 'package:flutter_examples/pages/text_page.dart';
 import 'package:flutter_examples/pages/toggle_button_page.dart';
+import 'package:flutter_examples/pages/tooltip_page.dart';
+import 'package:flutter_examples/pages/tween_animation_builder_page.dart';
 import 'package:flutter_examples/pages/vertical_divider_page.dart';
 import 'package:flutter_examples/pages/visibility_page.dart';
 
@@ -147,6 +149,18 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const VerticalDividerPage()),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('Tooltip'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const TooltipPage()),
                     );
                   },
                 ),
@@ -318,6 +332,24 @@ class NavDrawer extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => const ConstrainedBoxPage()),
+                    );
+                  },
+                ),
+              ]),
+          ExpansionTile(
+              title: const Text("Animation "),
+              leading: const Icon(Icons.menu_open),
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.verified_user),
+                  title: const Text('TweenAnimationBuilder'),
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const TweenAnimationBuilderPage()),
                     );
                   },
                 ),
